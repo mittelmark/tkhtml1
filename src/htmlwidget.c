@@ -2024,10 +2024,10 @@ static int HtmlCommand(
 */
 DLL_EXPORT int Tkhtml1_Init(Tcl_Interp *interp) {
 
-  if (Tcl_InitStubs(interp, TCL_PATCH_LEVEL, 0) == NULL)
+  if (Tcl_InitStubs(interp, "8.5", 0) == NULL)
     return TCL_ERROR;
 
-  if (Tk_InitStubs(interp, TK_PATCH_LEVEL, 0) == NULL)
+  if (Tk_InitStubs(interp, "8.5", 0) == NULL)
     return TCL_ERROR;
 
   Tcl_CreateCommand(interp,"html", HtmlCommand, Tk_MainWindow(interp), 0);
