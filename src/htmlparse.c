@@ -54,6 +54,7 @@ struct sgEsc {
 ** by adding entries to this table.
 */
 static struct sgEsc esc_sequences[] = {
+  { "mdash",      "-",    0 },    
   { "quot",      "\"",    0 },
   { "amp",       "&",     0 },
   { "lt",        "<",     0 },
